@@ -31,6 +31,10 @@ def enter_value():
 def upload_csv():
     return render_template('uploadcsv.html')
 
+@app.route('/Cloud_ICU_Model')
+def Cloud_ICU_Model():
+    return render_template('Cloud_ICU_Model.html')
+
 @app.route('/predict_using_csv',methods=['POST','GET'])
 def predict_using_csv():
     
